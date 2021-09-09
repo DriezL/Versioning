@@ -10,6 +10,8 @@
     <Product>Product</Product>
     <Description />
     <Copyright>Copyright © 2023</Copyright>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>CoreKey.pfx</AssemblyOriginatorKeyFile>
   </PropertyGroup>
 
   <ItemGroup>
