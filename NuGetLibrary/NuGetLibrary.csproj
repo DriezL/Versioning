@@ -34,7 +34,8 @@
     <SignAssembly>true</SignAssembly>
   </PropertyGroup>
   <PropertyGroup>
-    <AssemblyOriginatorKeyFile>MyKey.pfx</AssemblyOriginatorKeyFile>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -51,9 +52,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="MyKey.pfx" />
+    <None Include="..\MyKey.pfx">
+      <Link>MyKey.pfx</Link>
+    </None>
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
     <Content Include="Versies\1.0.0.0\NuGetLibrary.dll" />
     <Content Include="Versies\1.0.0.0\NuGetLibrary.pdb" />

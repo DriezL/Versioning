@@ -11,11 +11,15 @@
     <Description />
     <Copyright>Copyright © 2023</Copyright>
     <SignAssembly>true</SignAssembly>
-    <AssemblyOriginatorKeyFile>CoreKey.pfx</AssemblyOriginatorKeyFile>
+    <AssemblyOriginatorKeyFile>..\MyKey.pfx</AssemblyOriginatorKeyFile>
   </PropertyGroup>
 
   <ItemGroup>
     <Folder Include="Versions\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\MyKey.pfx" Link="MyKey.pfx" />
   </ItemGroup>
 
 </Project>

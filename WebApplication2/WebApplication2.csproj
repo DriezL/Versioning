@@ -3,8 +3,12 @@
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <SignAssembly>true</SignAssembly>
-    <AssemblyOriginatorKeyFile>CoreKey.pfx</AssemblyOriginatorKeyFile>
+    <AssemblyOriginatorKeyFile>..\MyKey.pfx</AssemblyOriginatorKeyFile>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\MyKey.pfx" Link="MyKey.pfx" />
+  </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\CoreClassLibrary1\CoreClassLibrary1.csproj" />
