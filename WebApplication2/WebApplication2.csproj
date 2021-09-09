@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>CoreKey.pfx</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CoreClassLibrary1\CoreClassLibrary1.csproj" />
+    <ProjectReference Include="..\CoreClassLibrary2\CoreClassLibrary2.csproj" />
+  </ItemGroup>
+
+</Project>
